@@ -45,10 +45,10 @@ const Header = () => {
     setstatus(!status);
   };
   return (
-    <header className="sticky top-0">
+    <header className="fixed w-full top-0 border-b-[2px]	">
       <div className="container flex justify-between items-center flex-wrap">
         <Logo />
-        <nav className={`absolute ${status ? "open" : "close"}`}>
+        <nav className={`${status ? "open" : "close"}`}>
           <ul className="flex justify-between items-center flex-wrap gap-[10px]">
             {links.map((link) => {
               return (

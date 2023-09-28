@@ -4,7 +4,7 @@
 
 @layer {
   .container {
-    @apply m-auto;
+    @apply m-auto px-[15px];
   }
   .center-element {
     @apply flex justify-center items-center;
@@ -24,8 +24,10 @@
 .show-menu {
   display: block;
 }
+
 @media (max-width: 992px) {
   header nav {
+    position: absolute;
     transition: all 0.5s ease-in-out;
     left: -100%;
     top: 0;
