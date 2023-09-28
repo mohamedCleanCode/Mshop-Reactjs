@@ -5,7 +5,10 @@ import Logo from "../logo/Logo";
 import ToggleMenu from "../toggle-menu/ToggleMenu";
 
 const Header = () => {
-  const [links, setLinks] = useState([
+  const links: {
+    title: string;
+    url: string;
+  }[] = [
     {
       title: "Home",
       url: "/",
@@ -38,14 +41,14 @@ const Header = () => {
       title: "Register",
       url: "/register",
     },
-  ]);
-  const [status, setstatus] = useState<boolean>(false);
+  ];
+  const [status, setStatus] = useState<boolean>(false);
 
   const handleShowMenu = (status: boolean) => {
-    setstatus(!status);
+    setStatus(!status);
   };
   return (
-    <header className="fixed w-full top-0 border-b-[2px]	">
+    <header className="fixed w-full top-0 border-b-[2px]	z-10 bg-white">
       <div className="container flex justify-between items-center flex-wrap">
         <Logo />
         <nav className={`${status ? "open" : "close"}`}>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Start tailwind */
 @layer {
   .container {
     @apply m-auto px-[15px];
@@ -10,6 +11,9 @@
     @apply flex justify-center items-center;
   }
 }
+/* End tailwind */
+
+/* Start header */
 .active {
   opacity: 1;
 }
@@ -24,7 +28,6 @@
 .show-menu {
   display: block;
 }
-
 @media (max-width: 992px) {
   header nav {
     position: absolute;
@@ -57,3 +60,29 @@ header nav ul li a {
   color: white;
   text-align: center;
 }
+/* End header */
+
+/* Start carousel */
+.carousel-root {
+  height: 100%;
+}
+.carousel {
+  height: 100%;
+}
+.carousel .slider-wrapper {
+  height: 100%;
+}
+.carousel .slider-wrapper.axis-horizontal .slider {
+  height: 100% !important;
+}
+.legend {
+  top: 80%;
+  left: 45%;
+  height: 50%;
+  width: 50%;
+  transition: 5s;
+}
+.carousel.carousel-slider:hover .legend {
+  top: 50%;
+}
+/* End carousel */
