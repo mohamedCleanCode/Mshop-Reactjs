@@ -1,4 +1,4 @@
-import CarouselSection from "../../carousel/Carousel";
+import CarouselSection from "../../components/carousel/Carousel";
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import { Carousel } from "react-responsive-carousel";
-import image1 from "../../src/assets/images/slider/slide1.jpg";
-import image2 from "../../src/assets/images/slider/slide2.jpg";
-import image3 from "../../src/assets/images/slider/slide3.jpg";
+import image1 from "../../assets/images/slider/slide1.jpg";
+import image2 from "../../assets/images/slider/slide2.jpg";
+import image3 from "../../assets/images/slider/slide3.jpg";
 
 const CarouselSection = () => {
   return (

@@ -86,3 +86,12 @@ header nav ul li a {
   top: 50%;
 }
 /* End carousel */
+
+/* Start site cart */
+.side-cart-open {
+  right: 0;
+}
+.side-cart-closed {
+  right: -1000px;
+}
+/* End site cart */

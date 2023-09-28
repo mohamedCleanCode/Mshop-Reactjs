@@ -69,7 +69,6 @@ const Header = () => {
         </nav>
         <CartIcon />
         <ToggleMenu handleShowMenu={handleShowMenu} status={status} />
-        {status}
       </div>
     </header>
   );
